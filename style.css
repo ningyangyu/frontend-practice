@@ -68,8 +68,13 @@ a:hover {
 }
 
 main {
-	backgroud-color:white;
+	background-color:white;
 	padding: 20px;
 	border:2px solid #2563eb;
 	margin-top: 20px;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
