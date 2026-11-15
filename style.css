@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #222;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header,
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+h2 {
+  color: #2563eb;
+}
+
+img {
+  width: 200px;
+  border-radius: 8px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #999;
+  padding: 8px;
+}
+.name {
+	color: #dc2626;
+	font-size: 32px;
+	text-align: center
+}
+.section-title {
+	color: #2563eb;
+	border-bottom: 2px solid #2563eb;
+	padding-bottom: 5px;
+}
+
+.goal {
+	color: #16a34a;
+	font-weight:bold;
+}
+
+.skill-table {
+	width:100%;
+	background-color:white;
+}
+
+#page-footer {
+	text-align:center;
+	margin-top:20px;
+}
+#page-footer p{
+	font-size:18px;
+	color:#facc15;
+}
+
+a:hover {
+	color:#dc2626;
+	font-weight:bold;
+}
+
+main {
+	backgroud-color:white;
+	padding: 20px;
+	border:2px solid #2563eb;
+	margin-top: 20px;
+}
