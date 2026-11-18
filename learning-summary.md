@@ -1,0 +1,3 @@
+这是一个可以记录每天学习结果的文件
+第十三课，学习justufy-content：center和align-items：center的区别
+区别其实在前几节课就说过了，justify-content:center是设置主轴方向上的排列，而align-items：conter是设置交叉轴方向上的排列
