@@ -95,3 +95,11 @@ header {
 	background-color:white;
 	text-align:center;
 }
+@media (max-width: 600px) {
+	header {
+		flex-direction: column;
+	}
+	.skill-item {
+		flex-basis: 100%;
+	}
+}
