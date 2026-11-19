@@ -35,5 +35,39 @@ border：1px soild #999；宽度为1px的某颜色的实线
 background-color: white;背景色设为白色
 text-align: center;控制元素内部文字的横向对其方式为居中，这里的align与Flexbox的align-items无关
 
+第十五课 媒体查询
+媒体查询能根据屏幕宽度切换CSS
+基本格式为
+@media (max-width: 600px) {
+  /* 屏幕宽度不超过 600px 时生效 */
+}
+在窄屏幕下，让页眉由横向排列改为纵向排列
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
 
+  .skill-item {
+    flex-basis: 100%;
+  }
+}
+当屏幕宽度小于600px时，页眉改成纵向排列，技能卡片各占满一行，达到的效果很形象，在手机上打开和电脑上打开很明显，虽然好像在用媒体查询之前就是这样
 
+第十六课 box-sizing: border-box
+在普通的盒模型
+box-sizing：content-box；
+元素宽度只包含内容，不包含padding和border
+假设main {
+  width: 100%;
+  padding: 20px;
+  border: 2px solid blue;
+}
+实际总宽度时100%内容宽度+左右padding各20px+左右border各2px
+容器占满屏幕后，再额外增加padding和border就可能超出课件区域造成页面横向溢出
+使用border-box
+* {
+  box-sizing: border-box;
+}
+width包含内容、padding和border，总宽度仍是100%
+加在*上表示对页面所有元素起效，使用统一的宽度计算方式
+在视觉上不会产生明显的变化，实际上网页会变得略微紧凑，因为padding、border和可用宽度都被合并到盒子内部，不会再额外让页面总宽度明显增大
